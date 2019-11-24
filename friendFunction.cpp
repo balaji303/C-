@@ -1,4 +1,4 @@
-// Friend function
+// Friend function and constructor
 #include <iostream>
 using namespace std;
 class Test{
