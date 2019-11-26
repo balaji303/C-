@@ -6,3 +6,4 @@ This repository has C++ code, that i do,practice and play with
 - [Inline function](https://github.com/balaji303/C-plusplus/blob/master/inlinefunction.cpp)
 - [Single inheristance](https://github.com/balaji303/C-plusplus/blob/master/SingleInheristance.cpp)
 - [Dynamic Memory Access and deaccess](https://github.com/balaji303/C-plusplus/blob/master/DynamicMemoryAccess.cpp)
+
