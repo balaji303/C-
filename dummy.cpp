@@ -1,4 +1,24 @@
 /*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+    char *p,q[7];
+    int i=0;
+    p=(char *)malloc(100);
+    printf("Enter");
+    scanf("%s",p);
+    while(*p!='\0'){
+        q[i]=*p;
+        i++;
+        p++;
+    }
+    printf("%d",sizeof(q));
+    for(i=0;q[i];i++){
+    printf("%c",q[i]);
+    }
+    return 0;
+}
  ============================================================================
  Name        : FirstCtask.c
  Author      : Balaji
