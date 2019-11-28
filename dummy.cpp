@@ -18,6 +18,9 @@ int main(){
     printf("%c",q[i]);
     }
     return 0;
+    
+    https://hackaday.com/tag/hifive-1/
+    https://hackaday.com/2017/01/05/hands-on-with-the-first-open-source-microcontroller/#more-237693
 }
  ============================================================================
  Name        : FirstCtask.c
