@@ -1,8 +1,6 @@
 /******************************************************************************
 
-    sifive_Hifive1blink.c
-
-    
+    sifive_Hifive1blink.c is below
 
     DEVELOPMENT ENVIRONMENT SPECIFICS:
 
