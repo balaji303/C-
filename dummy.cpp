@@ -6,7 +6,7 @@
 
       Firmware developed using Freedom Studio v4.12.0.2019-08-2
 
-      on Windows 10
+      on Windows 10 latest version
 
 
 
