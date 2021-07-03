@@ -1,0 +1,7 @@
+cout -> Standard output stream and used in console
+
+cin -> Standard input stream and used in Keyboard
+
+<< -> This is a insertion operator and used in output stream
+
+>> -> This is a extraction operator and used in input stream
