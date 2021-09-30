@@ -11,5 +11,3 @@ void cal(int num1,int num2, int num3){
     int sum = num1 + num2 + num3;
     cout<<"Sum of Values is: "<<sum<<endl;
 }
-//Dr. Nathitheeran M.B.B.S
-//Mr. Balaji B.E.
