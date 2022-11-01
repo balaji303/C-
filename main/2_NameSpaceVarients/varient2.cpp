@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
-int main(){
-
+//Here there is using namespace std, so no need to include std in all calls
+int main()
+{
     int num;
     cout<<"Enter Number: ";
     cin>>num;

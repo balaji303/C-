@@ -1,7 +1,7 @@
 #include <iostream>
-
-int main(){
-
+//Here there is no using namespace std, so include std in all calls
+int main()
+{
     int num;
     std::cout<<"Enter Number: ";
     //std::cin>>num;
