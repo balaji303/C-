@@ -1,7 +1,10 @@
+/* Assign values to an Array without equal sign */
 #include <iostream>
 using std::cout;
 
-int main(void){
+int main(void)
+{
+    // int array[5]={1,2,3,4,5};
     int array[5] {1,2,3,4,5};//Possible and causes no Error
     cout<<"Array First Element:"<<array[0];
     cout<<"\nArray Third Element:"<<array[2];

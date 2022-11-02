@@ -1,0 +1,7 @@
+Vectors are Same like array
+
+The size of Vector can be dynamically allocated but not in array
+
+Vector has many features like sort,find,reverse and more
+
+No Garbage values, they are automatically set to zero

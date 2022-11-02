@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 const int charges_per_room = 30;
-const int serivce_tax = 6/100;
+const float serivce_tax = 0.06;
 int main(void){
     int no_rooms;
     cout<<"...*...Welcome to Kings Room Cleaning Service...*...\n";
