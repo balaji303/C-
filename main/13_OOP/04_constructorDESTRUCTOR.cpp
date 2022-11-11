@@ -24,7 +24,7 @@ public:
     }
     //Destructor
     ~Player(){
-        cout<<"Destructor called for"<<name<<endl;
+        cout<<"Destructor called for "<<name<<endl;
     }
 };
 int main(void){
