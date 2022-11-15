@@ -21,18 +21,20 @@ public:
     ~Deep();
 };
 
+/* Allocate Storage and copy */
 Deep::Deep(int d){
     data = new int;
     *data = d;
     cout<<"Constructor"<<endl;
 }
 
-Deep::Deep(const Deep &source)
+Deep::Deep(const Deep &source):data(source.data)
 {
+    /* The :Deep(source.data) calls the constructor */
     /* Copy in the arguments are also working fine in this deep constructor */
     /*Instead of copying in the function declaration, now copy is done inside the function*/
-    data = new int;
-    *data = *source.data;
+    // data = new int;
+    // *data = *source.data;
     cout<<"Copy Constructor - Deep copy"<<endl;
 }
 

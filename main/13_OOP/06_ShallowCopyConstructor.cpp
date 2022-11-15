@@ -20,15 +20,16 @@ public:
     //Destructor
     ~Shallow();
 };
-
+/* Allocate Storage and copy */
 Shallow::Shallow(int d){
     data = new int;
     *data = d;
     cout<<"Constructor"<<endl;
 }
 
-Shallow::Shallow(const Shallow &source)
-    :data(source.data){
+Shallow::Shallow(const Shallow &source):data(source.data)
+{
+    /* The :data(source.data) calls the constructor */
         cout<<"Copy Constructor - shallow copy"<<endl;
 }
 
