@@ -11,5 +11,8 @@
 #ifndef _TICTACTOE_CPP
 #define _TICTACTOE_CPP
 #define VERSION_NUM 1
+#define LETTER_0 0x4f
+#define LETTER_X 0x58
+#define LETTER_1 0x31
 void Run_TicTacToe(void);
 #endif
