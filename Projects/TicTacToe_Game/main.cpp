@@ -15,10 +15,6 @@ using namespace std;
 
 int main(void)
 {
-    // while (1)
-    // {
-        /* code */
-        Run_TicTacToe();
-    // }
+    Run_TicTacToe();
     return 0;
 }

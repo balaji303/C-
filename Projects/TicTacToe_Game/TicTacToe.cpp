@@ -77,7 +77,19 @@ static char getPlayerChar(uint8_t playernum)
 }
 
 /**
- * @brief 
+ * @brief Prints the Game over banner
+ * 
+ */
+static void gameOverBanner(void)
+{
+    cout<<"\t\t  Game  Over  \t\t\n";
+    cout<<"\t\t TIC TAC TOE  \t\t\n";
+    cout<<"\t\t   2k22  v"<<getVersion();
+    cout<<"\t\t 2-Player mode \t\t\n";
+}
+
+/**
+ * @brief The main function for running the program and controling the loops
  * 
  */
 void game_running(void)
@@ -93,19 +105,21 @@ void game_running(void)
     }
     for(uint8_t loopCount = 1;loopCount < 10;loopCount++,player++)
     {
+        player = player%2;
+        if (player == 0)
+        {
+            player = 2;
+        }
         toBeImplemented = getPlayerChar(player);
         // cout<<"Player "<<player<<"- Enter a number to place "<<toBeImplemented<<": \n";
         printf("Player %d- Enter a number to place %c\n",player,toBeImplemented);
         cin>>num;
         gameArr[num] = toBeImplemented;
-        // printf("%c",gameArr[num]);
-        printf("\t %c | %c | %c \n",gameArr[1],gameArr[2],gameArr[3]);
-        // cout<<"\t  1  |  2  |  3  \n";
+        printf("\t  %c  |  %c  |  %c \n",gameArr[1],gameArr[2],gameArr[3]);
         cout<<"\t- - -|- - -|- - -\n";
-        printf("\t %c | %c | %c \n",gameArr[4],gameArr[5],gameArr[6]);
+        printf("\t  %c  |  %c  |  %c \n",gameArr[4],gameArr[5],gameArr[6]);
         cout<<"\t- - -|- - -|- - -\n";
-        // cout<<"\t  7  |  8  |  9  \n";
-        printf("\t %c | %c | %c \n",gameArr[7],gameArr[8],gameArr[9]);
+        printf("\t  %c  |  %c  |  %c \n",gameArr[7],gameArr[8],gameArr[9]);
     }
 }
 
@@ -115,10 +129,14 @@ void game_running(void)
  */
 void Run_TicTacToe(void)
 {
-    uint8_t game[9];
-    uint8_t num;
+    // Step-1
     welcomeBanner();
+    // Step-2
     playerConfig();
+    // Step-3
     newGameBoard();
+    // Step-4
     game_running();
+    // Step-5
+    gameOverBanner();
 }
