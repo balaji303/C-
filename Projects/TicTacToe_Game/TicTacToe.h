@@ -14,5 +14,8 @@
 #define LETTER_0 0x4f
 #define LETTER_X 0x58
 #define LETTER_1 0x31
+#define WIN 1
+#define LOSE 0
 void Run_TicTacToe(void);
+uint8_t checkWinnerSeq(char *gameSequArr);
 #endif

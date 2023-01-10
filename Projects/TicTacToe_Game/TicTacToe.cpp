@@ -31,7 +31,7 @@ static void welcomeBanner(void)
 {
     cout<<"\t\tWelcome  to  the\t\t\n";
     cout<<"\t\t TIC TAC TOE  \t\t\n";
-    cout<<"\t\t   2k22  v"<<getVersion();
+    cout<<"\t\t   2k22  v"<<getVersion()<<endl;
     cout<<"\t\t 2-Player mode \t\t\n";
 }
 
@@ -84,8 +84,58 @@ static void gameOverBanner(void)
 {
     cout<<"\t\t  Game  Over  \t\t\n";
     cout<<"\t\t TIC TAC TOE  \t\t\n";
-    cout<<"\t\t   2k22  v"<<getVersion();
+    cout<<"\t\t   2k22  v"<<getVersion()<<endl;
     cout<<"\t\t 2-Player mode \t\t\n";
+    cout<<"\t\t Credit: @balaji303 \t\t\n";
+}
+
+/**
+ * @brief Checks for the winning sequence horizontaly,vertically and diagonaly
+ * 
+ * @param gameSequArr 
+ * @return uint8_t 
+ */
+uint8_t checkWinnerSeq(char *gameSequArr)
+{
+    //Horizontal Line Sequence Check
+    if ( (*(gameSequArr + 1) == *(gameSequArr + 2)) && (*(gameSequArr + 2) == *(gameSequArr + 3)) )
+    {
+        return WIN;
+    }
+    else if( (*(gameSequArr + 4) == *(gameSequArr + 5)) && (*(gameSequArr + 5) == *(gameSequArr + 6)) )
+    {
+        return WIN;
+    }
+    else if( (*(gameSequArr + 7) == *(gameSequArr + 8)) && (*(gameSequArr + 8) == *(gameSequArr + 9)) )
+    {
+        return WIN;
+    }
+    //Vertical Line Sequence Check
+    else if( (*(gameSequArr + 1) == *(gameSequArr + 4)) && (*(gameSequArr + 4) == *(gameSequArr + 7)) )
+    {
+        return WIN;
+    }
+    else if( (*(gameSequArr + 2) == *(gameSequArr + 5)) && (*(gameSequArr + 5) == *(gameSequArr + 8)) )
+    {
+        return WIN;
+    }
+    else if( (*(gameSequArr + 3) == *(gameSequArr + 6)) && (*(gameSequArr + 6) == *(gameSequArr + 9)) )
+    {
+        return WIN;
+    }
+    //Diagonal check
+    else if( (*(gameSequArr + 1) == *(gameSequArr + 5)) && (*(gameSequArr + 5) == *(gameSequArr + 9)) )
+    {
+        return WIN;
+    }
+    else if( (*(gameSequArr + 3) == *(gameSequArr + 5)) && (*(gameSequArr + 5) == *(gameSequArr + 7)) )
+    {
+        return WIN;
+    }
+    else
+    {
+        return LOSE;
+    }
 }
 
 /**
@@ -96,6 +146,7 @@ void game_running(void)
 {
     int num; //Num needs to be an integer
     uint8_t player=1;
+    uint8_t winnerSequence = 0;
     char toBeImplemented;
     char gameArr[10];
     gameArr[1] = LETTER_1;
@@ -120,6 +171,12 @@ void game_running(void)
         printf("\t  %c  |  %c  |  %c \n",gameArr[4],gameArr[5],gameArr[6]);
         cout<<"\t- - -|- - -|- - -\n";
         printf("\t  %c  |  %c  |  %c \n",gameArr[7],gameArr[8],gameArr[9]);
+        winnerSequence = checkWinnerSeq(gameArr);
+        if (winnerSequence == WIN)
+        {
+            printf("Player %d WON !!!\n",player);
+            break;
+        }
     }
 }
 
