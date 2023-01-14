@@ -19,7 +19,7 @@ using namespace std;
  */
 class BaseClass
 {
-protected:
+private:
     uint8_t accBalance;
 public:
     //Constructor
