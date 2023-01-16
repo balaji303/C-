@@ -1,6 +1,6 @@
 # C++
-[![LastCommit](https://img.shields.io/github/last-commit/balaji303/C-plusplus.svg?style=social)](https://github.com/balaji303/C-plusplus/commits/master)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/balaji303/c-plusplus/badge)](https://www.codefactor.io/repository/github/balaji303/c-plusplus)
 
 This repository has C++ code, that I do,practice and play with 
 
