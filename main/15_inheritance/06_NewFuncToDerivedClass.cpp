@@ -19,7 +19,8 @@ using namespace std;
  */
 class BaseClass
 {
-private:
+// ! This is PROTECTED not private
+protected:
     uint8_t accBalance;
 public:
     //Constructor
