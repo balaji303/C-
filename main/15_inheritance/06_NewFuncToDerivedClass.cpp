@@ -78,7 +78,7 @@ uint8_t DerivedClass::getAccBalance(void) const
  */
 int main(void)
 {
-    DerivedClass der(5);
+    DerivedClass der{5};
     // BaseClass bas(6);
     // printf("accBalance %d",bas.getAccBalance()); // ! This is a error
     // * Since there is no getAccBalance in BaseClass class the above line thorughs an error
