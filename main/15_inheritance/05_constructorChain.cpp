@@ -1,7 +1,7 @@
 /**
  * @file 05_constructorChain.cpp
  * @author @balaji303 (https://github.com/balaji303)
- * @brief 
+ * @brief This explains about the constructor's chain
  * @version 1.0
  * @date 22-12-2022
  * 

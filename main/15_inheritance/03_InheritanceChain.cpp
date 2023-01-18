@@ -1,3 +1,13 @@
+/**
+ * @file 03_InheritanceChain.cpp
+ * @author @balaji303 (https://github.com/balaji303)
+ * @brief This is a example for inheritance chain
+ * @version 1
+ * @date 18-01-2023
+ * 
+ * Copyright (c) 2023 @balaji303
+ * 
+ */
 #include <iostream>
 #include <stdint.h>
 using namespace std;

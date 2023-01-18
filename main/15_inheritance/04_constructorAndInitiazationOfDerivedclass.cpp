@@ -2,7 +2,7 @@
  * @file 04_constructorAndInitiazationOfDerivedclass.cpp
  * @author @balaji303
  * @brief  Create a class a with one variable,drive another class b from class a with one variable,
- *          from the main function initializa those two variables, with single function. 
+ *          from the main function initialize those two variables, with single function. 
  * @version 0.1
  * @date 2022-12-21
  * 

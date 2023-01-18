@@ -1,3 +1,13 @@
+/**
+ * @file 01_InheritClass.cpp
+ * @author @balaji303 (https://github.com/balaji303)
+ * @brief Explains about class and its inheritance
+ * @version 1
+ * @date 18-01-2023
+ * 
+ * Copyright (c) 2023 @balaji303
+ * 
+ */
 #include <iostream>
 #include <stdint.h>
 using namespace std;
