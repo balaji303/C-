@@ -92,5 +92,8 @@ int main(void)
     // This is pointing by value
     DerivedClass* ptrDerVal{&der};
     cout<<"Vanakkam, This is from "<<ptrDerVal->getName();
+    BaseClass* ptrBase{&der};
+    //* Although der is DerivedClass, ptrBase points to BaseClass
+    cout<<"Habibi, This is from "<<ptrBase->getName();
     return 0;
 }
