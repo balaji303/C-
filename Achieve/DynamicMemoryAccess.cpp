@@ -16,8 +16,7 @@ int main(){
     }
     cout<<"The Entered values are:\n";
     for(i=1;i<=a;i++){
-        cout<<i<<"th Value you entered is "<<p[i]<<endl;
-        
+        cout<<i<<"th Value you entered is "<<p[i]<<endl; 
     }
     delete[] p; //DMdeAs
 }

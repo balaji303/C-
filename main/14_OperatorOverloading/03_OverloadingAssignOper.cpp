@@ -6,6 +6,7 @@ private:
     std::string name;
     int health;
     int xp;
+    
 public:
     void set_string(string funname)
     {
