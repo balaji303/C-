@@ -50,13 +50,13 @@ int main(void){
         {
             if (i == (Max_Element-1))
             {
-            cout<<list[i];
+                cout<<list[i];
             }
-            else{
-            cout<<list[i]<<",";
+            else
+            {
+                cout<<list[i]<<",";
             }
-            
-            }
+        }
         cout<<" ]";
         terminate = false;
         }
