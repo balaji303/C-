@@ -5,8 +5,8 @@ class Test{
   private:
    int a,b,result;
    friend class Book;
+   
   public:
-  
    inline void display(int a,int b) //Fnuction having only one line
    {
        cout<<"The result is:"<<add(a,b)<<endl; //Function calling another function
