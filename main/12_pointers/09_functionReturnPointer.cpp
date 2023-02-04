@@ -14,5 +14,4 @@ int *largestPointer(int *ptr1,int *ptr2){
     else{
         return ptr2;
     }
-
 }
