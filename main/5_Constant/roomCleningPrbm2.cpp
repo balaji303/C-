@@ -8,7 +8,6 @@
 #include <iostream>
 using namespace std;
 int main(void){
-  
   const int single_room_charge = 25;
   const int double_room_charge = 30;
   float service_tax = 6/100;

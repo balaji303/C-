@@ -27,7 +27,6 @@ class derived:public Base
     }   
 };
 int main(){  //Function overriding  
-    
     derived d_obj; //Creating and Calling derived class  obj
- return 0;   
+    return 0;   
 }

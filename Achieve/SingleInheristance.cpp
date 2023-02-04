@@ -1,5 +1,8 @@
 //Single inheristance
-#include <iosteam>
+#include <iostream>
+#include <stdint.h>
+using namespace std;
+
 class Base{
  private:
    int a;
@@ -11,9 +14,7 @@ class Base{
        cout<<"The value is:"<<a;
    }
 }
-class derived::public Base{
-    
-}
+class derived::public Base{};
 int main(void){
  int x,y;    
  return 0;   

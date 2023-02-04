@@ -5,7 +5,6 @@ using namespace std;
 
 // function to generate and retrun random numbers.
 int *getRandom( ) {
-
    static int  r[10];
 
    // set the seed
@@ -21,7 +20,6 @@ int *getRandom( ) {
 
 // main function to call above defined function.
 int main () {
-
    // a pointer to an int.
    int *p;
 
