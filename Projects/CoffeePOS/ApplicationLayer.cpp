@@ -1,8 +1,15 @@
+// #include <iostream>
+// #include "ApplicationLayer.h"
+// #include "CoffeePOS.h"
+// #include <stdint.h>
+// using namespace std;
+
+// #include "CoffeePOS.h"
 #include <iostream>
-#include "ApplicationLayer.h"
-#include "CoffeePOS.h"
 #include <stdint.h>
 using namespace std;
+
+#include "ApplicationLayer.h"
 
 void WelcomeScreen(void)
 {

@@ -62,9 +62,10 @@ Output2:
 #include <iostream>
 #include <stdint.h>
 #include <string.h>
+#include <cstdlib>
 using namespace std;
 #include "ApplicationLayer.h"
-// #include "CoffeePOS.h"
+#include "CoffeePOS.h"
 
 // using namespace std;
 
@@ -72,12 +73,13 @@ int main(void)
 {
      CoffeePOS customer[100];
      uint32_t customerCount = 1;
+     uint32_t price = 0;
      while(1)
      {
           WelcomeScreen();
           customer[customerCount].GetCustomerInput();
-          LogPrint(customer[customerCount]);
-          EndScreen(12);
+          price = LogPrint(customer[customerCount]);
+          EndScreen(price);
           customerCount++;
      }
      return 0;
